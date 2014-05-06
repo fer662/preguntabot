@@ -10,4 +10,7 @@
 
 @interface PreguntaBot : NSObject
 
+- (id)initWithApSession:(NSString *)apSession userId:(NSString *)userId;
+- (void)logic;
+
 @end

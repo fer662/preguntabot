@@ -10,6 +10,11 @@
 		C519633D1916FEAA00F6022B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C519633C1916FEAA00F6022B /* CoreFoundation.framework */; };
 		C51963401916FEAA00F6022B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C519633F1916FEAA00F6022B /* main.c */; };
 		C51963421916FEAB00F6022B /* PreguntaBot.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C51963411916FEAB00F6022B /* PreguntaBot.1 */; };
+		C51963491917136000F6022B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C51963481917136000F6022B /* Foundation.framework */; };
+		C519634C1917137B00F6022B /* PreguntaBotClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C519634B1917137B00F6022B /* PreguntaBotClient.m */; };
+		C519634F1917197F00F6022B /* NSArray+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = C519634E1917197F00F6022B /* NSArray+Functional.m */; };
+		C519635219171A7E00F6022B /* PreguntaBot.m in Sources */ = {isa = PBXBuildFile; fileRef = C519635119171A7E00F6022B /* PreguntaBot.m */; };
+		EAC0319B23664BF692010072 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5B289FD0FC42779FE985B4 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,10 +31,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2A5B289FD0FC42779FE985B4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B672A376C08641E39B22DC75 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		C51963391916FEAA00F6022B /* PreguntaBot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PreguntaBot; sourceTree = BUILT_PRODUCTS_DIR; };
 		C519633C1916FEAA00F6022B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		C519633F1916FEAA00F6022B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		C519633F1916FEAA00F6022B /* main.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = main.c; sourceTree = "<group>"; };
 		C51963411916FEAB00F6022B /* PreguntaBot.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = PreguntaBot.1; sourceTree = "<group>"; };
+		C51963481917136000F6022B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C519634A1917137B00F6022B /* PreguntaBotClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreguntaBotClient.h; sourceTree = "<group>"; };
+		C519634B1917137B00F6022B /* PreguntaBotClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreguntaBotClient.m; sourceTree = "<group>"; };
+		C519634D1917197F00F6022B /* NSArray+Functional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Functional.h"; sourceTree = "<group>"; };
+		C519634E1917197F00F6022B /* NSArray+Functional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Functional.m"; sourceTree = "<group>"; };
+		C519635019171A7E00F6022B /* PreguntaBot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreguntaBot.h; sourceTree = "<group>"; };
+		C519635119171A7E00F6022B /* PreguntaBot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreguntaBot.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +51,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C51963491917136000F6022B /* Foundation.framework in Frameworks */,
 				C519633D1916FEAA00F6022B /* CoreFoundation.framework in Frameworks */,
+				EAC0319B23664BF692010072 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +66,7 @@
 				C519633E1916FEAA00F6022B /* PreguntaBot */,
 				C519633B1916FEAA00F6022B /* Frameworks */,
 				C519633A1916FEAA00F6022B /* Products */,
+				B672A376C08641E39B22DC75 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,7 +81,9 @@
 		C519633B1916FEAA00F6022B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C51963481917136000F6022B /* Foundation.framework */,
 				C519633C1916FEAA00F6022B /* CoreFoundation.framework */,
+				2A5B289FD0FC42779FE985B4 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -72,8 +91,14 @@
 		C519633E1916FEAA00F6022B /* PreguntaBot */ = {
 			isa = PBXGroup;
 			children = (
+				C519634D1917197F00F6022B /* NSArray+Functional.h */,
+				C519634E1917197F00F6022B /* NSArray+Functional.m */,
 				C519633F1916FEAA00F6022B /* main.c */,
 				C51963411916FEAB00F6022B /* PreguntaBot.1 */,
+				C519634A1917137B00F6022B /* PreguntaBotClient.h */,
+				C519634B1917137B00F6022B /* PreguntaBotClient.m */,
+				C519635019171A7E00F6022B /* PreguntaBot.h */,
+				C519635119171A7E00F6022B /* PreguntaBot.m */,
 			);
 			path = PreguntaBot;
 			sourceTree = "<group>";
@@ -85,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C51963451916FEAB00F6022B /* Build configuration list for PBXNativeTarget "PreguntaBot" */;
 			buildPhases = (
+				E7A93EDF0C934BA599C36B62 /* Check Pods Manifest.lock */,
 				C51963351916FEAA00F6022B /* Sources */,
 				C51963361916FEAA00F6022B /* Frameworks */,
 				C51963371916FEAA00F6022B /* CopyFiles */,
+				C3537AE23B0343CB91E92D6D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +151,48 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C3537AE23B0343CB91E92D6D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7A93EDF0C934BA599C36B62 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C51963351916FEAA00F6022B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C519634C1917137B00F6022B /* PreguntaBotClient.m in Sources */,
 				C51963401916FEAA00F6022B /* main.c in Sources */,
+				C519634F1917197F00F6022B /* NSArray+Functional.m in Sources */,
+				C519635219171A7E00F6022B /* PreguntaBot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +271,7 @@
 		};
 		C51963461916FEAB00F6022B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B672A376C08641E39B22DC75 /* Pods.xcconfig */;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -215,6 +279,7 @@
 		};
 		C51963471916FEAB00F6022B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B672A376C08641E39B22DC75 /* Pods.xcconfig */;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -239,6 +304,7 @@
 				C51963471916FEAB00F6022B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
